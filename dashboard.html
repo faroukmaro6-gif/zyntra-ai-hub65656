@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZYNTRA Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background:#0B0B12;
+    margin:0;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+
+    width:260px;
+    background:#151522;
+    border-right:2px solid #8B5CF6;
+    padding:30px;
+
+}
+
+.sidebar h2{
+
+    color:#8B5CF6;
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.sidebar a{
+
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    margin:15px 0;
+    border-radius:15px;
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    background:#8B5CF6;
+
+}
+
+.main{
+
+    flex:1;
+    padding:40px;
+
+}
+
+.main h1{
+
+    margin-bottom:40px;
+
+}
+
+.cards{
+
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    flex:1;
+    min-width:220px;
+    background:#161621;
+    border:2px solid #8B5CF6;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(139,92,246,.5);
+
+}
+
+.card h3{
+
+    color:#8B5CF6;
+
+}
+
+.card p{
+
+    font-size:35px;
+    margin-top:15px;
+    color:white;
+
+}
+
+.section{
+
+    margin-top:60px;
+    background:#161621;
+    border:2px solid #8B5CF6;
+    border-radius:20px;
+    padding:30px;
+
+}
+
+.section h2{
+
+    color:#8B5CF6;
+
+}
+
+.action-btn{
+
+    background:#8B5CF6;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    margin:10px;
+    font-weight:bold;
+}
+
+.action-btn:hover{
+
+    background:#6D28D9;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+
+<h2>ZYNTRA ADMIN</h2>
+
+<a href="products-admin.html">📦 Products</a>
+<a href="payments-admin.html">💳 Payments</a>
+<a href="orders-admin.html">🛒 Orders</a>
+<a href="customers-admin.html">👥 Customers</a>
+<a href="settings.html">⚙️ Settings</a>
+
+<a href="index.html">⬅ Back Website</a>
+
+</div>
+
+<div class="main">
+
+<h1>Welcome Admin (Omar Farouk) 👋</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Products</h3>
+<p>12</p>
+</div>
+
+<div class="card">
+<h3>Total Orders</h3>
+<p>54</p>
+</div>
+
+<div class="card">
+<h3>Total Revenue</h3>
+<p>$870</p>
+</div>
+
+<div class="card">
+<h3>Pending Orders</h3>
+<p>6</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📦 Product Management</h2>
+
+<button class="action-btn">Add Product</button>
+
+<button class="action-btn">Edit Product</button>
+
+<button class="action-btn">Delete Product</button>
+
+</div>
+
+<div class="section">
+
+<h2>💳 Payment Management</h2>
+
+<button class="action-btn">View Payments</button>
+
+<button class="action-btn">Change Numbers</button>
+
+<button class="action-btn">Payment History</button>
+
+</div>
+
+<div class="section">
+
+<h2>🛒 Order Management</h2>
+
+<button class="action-btn">Pending Orders</button>
+
+<button class="action-btn">Completed Orders</button>
+
+<button class="action-btn">Cancel Order</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
