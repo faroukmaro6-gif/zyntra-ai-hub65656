@@ -144,6 +144,24 @@ body{
 
 }
 
+.notification-card {
+    cursor: pointer;
+}
+
+.notification-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.7);
+}
+
+.notification-hint {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+
 </style>
 
 </head>
@@ -159,6 +177,7 @@ body{
 <a href="products-admin.html">📦 Products</a>
 <a href="payments-admin.html">💳 Payments</a>
 <a href="orders-admin.html">🛒 Orders</a>
+<a href="Users.html">👥 Users</a>
 <a href="customers-admin.html">👥 Customers</a>
 <a href="settings.html">⚙️ Settings</a>
 
@@ -168,7 +187,7 @@ body{
 
 <div class="main">
 
-<h1>Welcome Admin (Omar Farouk) 👋</h1>
+<h1>Welcome Admin (ADMIN) 👋</h1>
 
 <div class="cards">
 
@@ -190,6 +209,23 @@ body{
 <div class="card">
 <h3>Pending Orders</h3>
 <p>6</p>
+</div>
+
+<div class="card notification-card" id="notification-card">
+
+    <h3>🔔 Notifications</h3>
+
+    <p id="notification-count">0</p>
+
+    <span class="notification-hint">
+        Click to view pending payments
+    </span>
+
+</div>
+
+<div class="card">
+    <h3>💰 Available Money</h3>
+    <p id="available-money">$0</p>
 </div>
 
 </div>
@@ -233,6 +269,8 @@ body{
 </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
